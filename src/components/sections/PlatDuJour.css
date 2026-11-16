@@ -1,0 +1,160 @@
+/* ==========================================================================
+   PLAT DU JOUR STYLES
+   ========================================================================== */
+.plat-section {
+  background: var(--color-bg-base);
+  position: relative;
+}
+
+.plat-header {
+  margin-bottom: 3.5rem;
+}
+
+.plat-card {
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  max-width: 1050px;
+  margin: 0 auto;
+  background: #111117;
+  overflow: hidden;
+  border: 1px solid var(--border-red-subtle);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.7), 0 0 25px rgba(225, 6, 0, 0.12);
+}
+
+.plat-visual-wrap {
+  position: relative;
+  min-height: 380px;
+  background: #000;
+}
+
+.plat-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.plat-img-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.1) 0%,
+    rgba(17, 17, 23, 0.8) 100%
+  );
+}
+
+.plat-badge-pill {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1.5rem;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.45rem 0.95rem;
+  border-radius: var(--radius-pill);
+  background: rgba(14, 14, 18, 0.85);
+  border: 1px solid var(--border-gold-subtle);
+  color: var(--color-gold-light);
+  font-size: 0.82rem;
+  backdrop-filter: blur(8px);
+}
+
+.plat-content {
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.plat-meta-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.plat-price {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--color-gold-light);
+}
+
+.plat-title {
+  font-size: 1.75rem;
+  color: var(--color-text-primary);
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+
+.plat-desc {
+  font-size: 1rem;
+  color: var(--color-text-secondary);
+  line-height: 1.7;
+  margin-bottom: 1.75rem;
+}
+
+.plat-chef-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.85rem;
+  padding: 1rem 1.25rem;
+  margin-bottom: 2rem;
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}
+
+.chef-icon {
+  font-size: 1.5rem;
+}
+
+.plat-chef-note strong {
+  color: var(--color-text-primary);
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+.plat-actions-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.plat-empty-box {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.empty-icon {
+  font-size: 2.5rem;
+}
+
+.empty-title {
+  font-size: 1.35rem;
+  color: var(--color-text-primary);
+}
+
+.empty-desc {
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+  .plat-card {
+    grid-template-columns: 1fr;
+  }
+  .plat-visual-wrap {
+    min-height: 250px;
+  }
+  .plat-content {
+    padding: 1.75rem;
+  }
+}

@@ -1,0 +1,67 @@
+:root {
+  /* ==========================================================================
+     PALETTE COULEURS - FERRARI LOUNGE 229 BY AUTO CRAZE 229
+     ========================================================================== */
+  /* Noirs profonds */
+  --color-black-pure: #000000;
+  --color-black-deep: #070709;
+  --color-bg-base: #0B0B0E;
+  --color-bg-surface: #121217;
+  --color-bg-card: #15151C;
+  --color-bg-card-hover: #1C1C26;
+  --color-bg-glass: rgba(11, 11, 14, 0.82);
+  --color-bg-glass-card: rgba(21, 21, 28, 0.72);
+
+  /* Rouge Course & Sport Automobile (touches maîtrisées) */
+  --color-red-primary: #E10600;
+  --color-red-light: #FF2B25;
+  --color-red-dark: #9E0400;
+  --gradient-red: linear-gradient(135deg, #FF332B 0%, #E10600 50%, #940400 100%);
+  --glow-red-sm: 0 0 15px rgba(225, 6, 0, 0.35);
+  --glow-red-md: 0 0 30px rgba(225, 6, 0, 0.45);
+  --border-red-subtle: rgba(225, 6, 0, 0.35);
+
+  /* Or & Champagne (détails élégants) */
+  --color-gold-light: #F7E4A8;
+  --color-gold-primary: #D4AF37;
+  --color-gold-hover: #E3C158;
+  --color-gold-dark: #997B24;
+  --gradient-gold: linear-gradient(135deg, #FDE8A5 0%, #D4AF37 50%, #A37F1E 100%);
+  --gradient-gold-subtle: linear-gradient(135deg, rgba(212, 175, 55, 0.22) 0%, rgba(212, 175, 55, 0.05) 100%);
+  --glow-gold-sm: 0 0 15px rgba(212, 175, 55, 0.25);
+  --glow-gold-md: 0 0 30px rgba(212, 175, 55, 0.35);
+
+  /* Textes & Nuances claires */
+  --color-text-primary: #FFFFFF;
+  --color-text-secondary: #E5E5EB;
+  --color-text-muted: #9E9EA8;
+  --color-text-dimmed: #6E6E7A;
+  --color-text-gold: #ECC880;
+
+  /* Bordures fines */
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-light: rgba(255, 255, 255, 0.14);
+  --border-gold-subtle: rgba(212, 175, 55, 0.28);
+  --border-gold-bright: rgba(212, 175, 55, 0.7);
+
+  /* Ombres & Lueurs */
+  --shadow-elevation: 0 20px 45px rgba(0, 0, 0, 0.75);
+
+  /* Typographie */
+  --font-serif: 'Cinzel', 'Playfair Display', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  /* Transitions fluides */
+  --transition-fast: 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-smooth: 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-slow: 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Rayons de courbure */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-pill: 9999px;
+
+  /* Conteneur */
+  --container-max-width: 1240px;
+}

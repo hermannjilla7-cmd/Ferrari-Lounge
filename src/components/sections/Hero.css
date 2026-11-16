@@ -1,0 +1,405 @@
+/* ==========================================================================
+   HERO SECTION STYLES — FERRARI LOUNGE 229 BY AUTO CRAZE 229
+   ========================================================================== */
+.hero-section {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-top: 130px;
+  padding-bottom: 75px;
+  overflow: hidden;
+  background-color: var(--color-bg-base);
+}
+
+/* ==========================================================================
+   FERRARI BACKGROUND WATERMARK
+   ========================================================================== */
+.hero-bg-logo-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -46%);
+  width: min(740px, 94vw);
+  height: min(740px, 94vw);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  z-index: 1;
+  user-select: none;
+}
+
+.hero-bg-logo-glow {
+  position: absolute;
+  width: 65%;
+  height: 65%;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(225, 6, 0, 0.28) 0%,
+    rgba(212, 175, 55, 0.12) 40%,
+    transparent 70%
+  );
+  filter: blur(55px);
+  animation: logoGlowPulse 5s ease-in-out infinite alternate;
+}
+
+@keyframes logoGlowPulse {
+  0% {
+    opacity: 0.5;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 0.85;
+    transform: scale(1.05);
+  }
+}
+
+.hero-bg-logo-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  opacity: 0.2;
+  filter: contrast(1.15) brightness(1.05);
+  mix-blend-mode: screen;
+  mask-image: radial-gradient(
+    ellipse 65% 65% at 50% 50%,
+    rgba(0, 0, 0, 1) 35%,
+    rgba(0, 0, 0, 0.6) 55%,
+    transparent 75%
+  );
+  -webkit-mask-image: radial-gradient(
+    ellipse 65% 65% at 50% 50%,
+    rgba(0, 0, 0, 1) 35%,
+    rgba(0, 0, 0, 0.6) 55%,
+    transparent 75%
+  );
+}
+
+.hero-bg-logo-vignette {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at center,
+    transparent 35%,
+    rgba(11, 11, 14, 0.7) 70%,
+    var(--color-bg-base) 95%
+  );
+  pointer-events: none;
+}
+
+/* Atmospheric Glows */
+.hero-glow-top {
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 900px;
+  height: 400px;
+  background: radial-gradient(ellipse at center, rgba(225, 6, 0, 0.15) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.hero-glow-gold {
+  position: absolute;
+  top: 30%;
+  right: -10%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(212, 175, 55, 0.08) 0%, transparent 65%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.hero-container {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 3.5rem;
+  align-items: center;
+}
+
+/* Left Content */
+.hero-content {
+  max-width: 640px;
+}
+
+.hero-signature-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.6rem;
+}
+
+.signature-prefix {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--color-text-muted);
+}
+
+.signature-brand {
+  font-size: 0.88rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: var(--color-red-light);
+}
+
+.hero-title {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-brand-name {
+  font-family: var(--font-serif);
+  font-size: clamp(2.4rem, 5.2vw, 4rem);
+  font-weight: 800;
+  line-height: 1.1;
+  color: var(--color-text-primary);
+  letter-spacing: 0.02em;
+}
+
+.hero-slogan-highlight {
+  font-family: var(--font-serif);
+  font-size: clamp(1.6rem, 3.2vw, 2.4rem);
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.hero-description {
+  font-size: 1.08rem;
+  color: var(--color-text-secondary);
+  line-height: 1.75;
+  margin-bottom: 2.25rem;
+}
+
+.hero-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  margin-bottom: 2.75rem;
+}
+
+.hero-btn {
+  padding: 0.95rem 2rem;
+  font-size: 0.96rem;
+}
+
+.hero-features {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding-top: 1.75rem;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.hero-feature-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--color-text-muted);
+}
+
+.feature-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--color-red-primary);
+  box-shadow: 0 0 8px var(--color-red-primary);
+}
+
+/* Right Visual Frame */
+.hero-visual {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-visual-frame {
+  position: relative;
+  width: 100%;
+  max-width: 520px;
+}
+
+.visual-halo {
+  position: absolute;
+  inset: -15px;
+  background: radial-gradient(circle, rgba(225, 6, 0, 0.22) 0%, transparent 70%);
+  filter: blur(25px);
+  z-index: 1;
+}
+
+.car-image-container {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--border-red-subtle);
+  box-shadow: var(--shadow-elevation), 0 0 35px rgba(225, 6, 0, 0.15);
+  background: #111116;
+  z-index: 2;
+  aspect-ratio: 4 / 3;
+}
+
+.car-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-slow);
+}
+
+.hero-visual-frame:hover .car-image {
+  transform: scale(1.04);
+}
+
+.car-image-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(11, 11, 14, 0.1) 0%,
+    rgba(11, 11, 14, 0.5) 60%,
+    rgba(7, 7, 9, 0.95) 100%
+  );
+  pointer-events: none;
+}
+
+/* Floating info cards */
+.floating-card {
+  position: absolute;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  padding: 0.85rem 1.25rem;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.7);
+  border: 1px solid var(--border-subtle);
+}
+
+.floating-card-top {
+  top: -20px;
+  right: -15px;
+  border-color: var(--border-red-subtle);
+  animation: floatCard1 5s ease-in-out infinite;
+}
+
+.floating-card-bottom {
+  bottom: -22px;
+  left: -15px;
+  border-color: var(--border-gold-subtle);
+  animation: floatCard2 6s ease-in-out infinite;
+}
+
+@keyframes floatCard1 {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes floatCard2 {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(8px);
+  }
+}
+
+.badge-icon-wrap.red {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-sm);
+  background: rgba(225, 6, 0, 0.15);
+  border: 1px solid var(--border-red-subtle);
+  color: var(--color-red-light);
+}
+
+.partner-floating-logo {
+  height: 36px;
+  width: auto;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.floating-label {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  line-height: 1.2;
+}
+
+.floating-sub {
+  font-size: 0.72rem;
+  color: var(--color-text-muted);
+  margin-top: 2px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 3.5rem;
+  }
+
+  .hero-content {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .hero-signature-wrap {
+    justify-content: center;
+  }
+
+  .gold-divider {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-actions {
+    justify-content: center;
+  }
+
+  .hero-features {
+    justify-content: center;
+  }
+
+  .hero-visual-frame {
+    max-width: 480px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-section {
+    padding-top: 110px;
+    padding-bottom: 55px;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-btn {
+    width: 100%;
+  }
+}

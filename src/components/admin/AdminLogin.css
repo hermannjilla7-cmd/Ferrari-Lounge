@@ -1,0 +1,118 @@
+/* ==========================================================================
+   ADMIN LOGIN STYLES
+   ========================================================================== */
+.admin-login-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1.5rem;
+  background: radial-gradient(circle at 50% 30%, rgba(225, 6, 0, 0.12) 0%, #07070A 70%);
+}
+
+.admin-login-card {
+  width: 100%;
+  max-width: 480px;
+  padding: 2.75rem 2.25rem;
+  background: #111117;
+  border: 1px solid var(--border-subtle);
+  border-top: 3px solid var(--color-red-primary);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.8), 0 0 30px rgba(225, 6, 0, 0.15);
+}
+
+.admin-login-brand {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.admin-login-logo {
+  height: 64px;
+  width: auto;
+  object-fit: contain;
+  margin-bottom: 1.25rem;
+  filter: drop-shadow(0 4px 12px rgba(225, 6, 0, 0.35));
+}
+
+.admin-portal-title {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--color-text-primary);
+  letter-spacing: 0.06em;
+  margin-bottom: 0.35rem;
+}
+
+.admin-portal-sub {
+  font-size: 0.82rem;
+  color: var(--color-red-light);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.admin-login-error {
+  padding: 0.85rem 1rem;
+  border-radius: var(--radius-sm);
+  background: rgba(239, 68, 68, 0.12);
+  border: 1px solid rgba(239, 68, 68, 0.4);
+  color: #FCA5A5;
+  font-size: 0.85rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.4;
+}
+
+.admin-login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.login-demo-hint {
+  padding: 0.85rem 1rem;
+  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px dashed rgba(255, 255, 255, 0.1);
+  font-size: 0.78rem;
+}
+
+.hint-label {
+  display: block;
+  color: var(--color-text-muted);
+  margin-bottom: 0.35rem;
+}
+
+.hint-keys {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.hint-keys code {
+  color: var(--color-gold-light);
+  font-family: var(--font-mono, monospace);
+  font-size: 0.76rem;
+}
+
+.admin-submit-btn {
+  width: 100%;
+  padding: 0.9rem;
+  font-size: 0.95rem;
+}
+
+.admin-login-footer {
+  margin-top: 1.75rem;
+  text-align: center;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.btn-back-public {
+  font-size: 0.82rem;
+  color: var(--color-text-muted);
+  transition: color var(--transition-fast);
+}
+
+.btn-back-public:hover {
+  color: var(--color-gold-light);
+}

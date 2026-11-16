@@ -1,0 +1,210 @@
+/* Avis Section Styling - Ferrari Lounge 229 */
+.avis-section {
+  position: relative;
+  background: radial-gradient(circle at 80% 20%, rgba(212, 0, 0, 0.04) 0%, transparent 60%),
+              radial-gradient(circle at 20% 80%, rgba(212, 175, 55, 0.03) 0%, transparent 60%),
+              var(--color-black);
+  padding: 100px 0;
+}
+
+.avis-header {
+  max-width: 720px;
+  margin-bottom: 50px;
+}
+
+.avis-layout {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.avis-col-title {
+  font-size: 1.4rem;
+  color: var(--color-gold);
+  margin-bottom: 24px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.avis-empty-box {
+  text-align: center;
+  padding: 45px 30px;
+  background: rgba(18, 18, 18, 0.6);
+  border: 1px dashed rgba(255, 255, 255, 0.15);
+  border-radius: var(--radius-md);
+}
+
+.empty-star {
+  font-size: 2.5rem;
+  display: inline-block;
+  margin-bottom: 14px;
+}
+
+.avis-empty-box h4 {
+  font-size: 1.15rem;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.avis-empty-box p {
+  color: var(--color-text-muted);
+  font-size: 0.92rem;
+  line-height: 1.6;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.reviews-cards-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.review-card {
+  padding: 24px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  transition: transform var(--transition-fast), border-color var(--transition-fast);
+}
+
+.review-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(212, 175, 55, 0.35);
+}
+
+.review-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.review-author {
+  display: block;
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+.review-date {
+  font-size: 0.78rem;
+  color: var(--color-text-muted);
+}
+
+.review-stars {
+  color: var(--color-gold);
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+}
+
+.review-text {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.94rem;
+  line-height: 1.6;
+  font-style: italic;
+}
+
+/* Review Form */
+.review-form-card {
+  padding: 32px 28px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.form-heading {
+  font-size: 1.35rem;
+  color: #fff;
+  margin-bottom: 6px;
+}
+
+.form-subheading {
+  font-size: 0.86rem;
+  color: var(--color-text-muted);
+  margin-bottom: 22px;
+  line-height: 1.5;
+}
+
+.review-form .form-group {
+  margin-bottom: 18px;
+}
+
+.rating-selector {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 6px;
+}
+
+.star-select-btn {
+  background: none;
+  border: none;
+  font-size: 1.7rem;
+  color: #444;
+  cursor: pointer;
+  transition: transform 0.15s ease, color 0.15s ease;
+  line-height: 1;
+  padding: 0 2px;
+}
+
+.star-select-btn:hover,
+.star-select-btn.active {
+  color: var(--color-gold);
+}
+
+.star-select-btn:hover {
+  transform: scale(1.18);
+}
+
+.rating-label-text {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  margin-left: 10px;
+}
+
+.review-submit-btn {
+  width: 100%;
+  margin-top: 8px;
+  justify-content: center;
+}
+
+/* Success State */
+.review-success-state {
+  text-align: center;
+  padding: 30px 10px;
+}
+
+.success-icon-wrap {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: rgba(34, 197, 94, 0.15);
+  color: #22c55e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+}
+
+.review-success-state h4 {
+  font-size: 1.25rem;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.review-success-state p {
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 900px) {
+  .avis-layout {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}

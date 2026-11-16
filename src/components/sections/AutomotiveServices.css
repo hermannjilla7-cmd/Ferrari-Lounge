@@ -1,0 +1,404 @@
+/* Automotive Services Section Styling - Ferrari Lounge 229 / Auto Craze 229 */
+.automotive-section {
+  position: relative;
+  background: radial-gradient(circle at 10% 20%, rgba(212, 0, 0, 0.04) 0%, transparent 60%),
+              radial-gradient(circle at 90% 80%, rgba(212, 175, 55, 0.03) 0%, transparent 60%),
+              var(--color-black);
+  padding: 100px 0;
+}
+
+.automotive-header {
+  max-width: 740px;
+  margin-bottom: 40px;
+}
+
+/* Nav Tabs */
+.auto-tab-nav {
+  display: inline-flex;
+  gap: 12px;
+  padding: 6px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-full);
+  margin-top: 30px;
+}
+
+.auto-tab-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 28px;
+  background: transparent;
+  border: none;
+  border-radius: var(--radius-full);
+  color: var(--color-text-muted);
+  font-family: var(--font-brand);
+  font-size: 0.92rem;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.auto-tab-btn:hover {
+  color: #fff;
+}
+
+.auto-tab-btn.active {
+  background: var(--color-red);
+  color: #fff;
+  box-shadow: 0 4px 16px rgba(212, 0, 0, 0.4);
+}
+
+.tab-pane-fade {
+  animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Grids */
+.rental-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.pane-col-title {
+  font-size: 1.35rem;
+  color: var(--color-gold);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.count-badge {
+  font-size: 0.8rem;
+  padding: 4px 10px;
+  border-radius: var(--radius-full);
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--color-text-muted);
+}
+
+/* Zero Vehicle Box */
+.zero-auto-box {
+  padding: 40px 30px;
+  text-align: center;
+  background: rgba(18, 18, 18, 0.6);
+  border: 1px dashed rgba(255, 255, 255, 0.15);
+  border-radius: var(--radius-md);
+}
+
+.zero-icon {
+  font-size: 2.8rem;
+  margin-bottom: 14px;
+}
+
+.zero-auto-box h4 {
+  font-size: 1.2rem;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.zero-auto-box p {
+  color: var(--color-text-muted);
+  font-size: 0.92rem;
+  line-height: 1.6;
+  max-width: 500px;
+  margin: 0 auto 10px;
+}
+
+.zero-hint {
+  font-size: 0.86rem;
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.zero-phone-btn {
+  margin-top: 18px;
+  display: inline-flex;
+}
+
+/* Vehicles List */
+.vehicles-list-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.vehicle-item-card {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.vehicle-item-card:hover,
+.vehicle-item-card.selected {
+  border-color: var(--color-red);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(212, 0, 0, 0.15);
+}
+
+.vehicle-thumb-wrap {
+  width: 140px;
+  height: 100px;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  flex-shrink: 0;
+  background: #111;
+}
+
+.vehicle-thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.vehicle-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.vehicle-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.vehicle-title {
+  font-size: 1.15rem;
+  color: #fff;
+}
+
+.status-pill {
+  font-size: 0.72rem;
+  padding: 3px 8px;
+  border-radius: var(--radius-full);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.status-avail {
+  background: rgba(34, 197, 94, 0.15);
+  color: #22c55e;
+}
+
+.status-unavail {
+  background: rgba(239, 68, 68, 0.15);
+  color: #ef4444;
+}
+
+.vehicle-category {
+  font-size: 0.8rem;
+  color: var(--color-gold);
+  margin-bottom: 6px;
+}
+
+.vehicle-desc {
+  font-size: 0.86rem;
+  color: var(--color-text-muted);
+  line-height: 1.4;
+  margin-bottom: 12px;
+}
+
+.vehicle-foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
+
+.vehicle-price {
+  font-size: 0.95rem;
+  color: #fff;
+}
+
+.vehicle-price strong {
+  color: var(--color-gold);
+}
+
+/* Forms */
+.rental-form-card,
+.depannage-form-card {
+  padding: 32px 28px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.form-heading {
+  font-size: 1.35rem;
+  color: #fff;
+  margin-bottom: 6px;
+}
+
+.form-subheading {
+  font-size: 0.86rem;
+  color: var(--color-text-muted);
+  margin-bottom: 22px;
+  line-height: 1.5;
+}
+
+.auto-form .form-group {
+  margin-bottom: 16px;
+}
+
+.form-row-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.checkbox-custom-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+.checkbox-custom-label input[type='checkbox'] {
+  accent-color: var(--color-red);
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.auto-success-state {
+  text-align: center;
+  padding: 30px 10px;
+}
+
+.text-red-alert {
+  color: var(--color-gold);
+  font-size: 0.9rem;
+}
+
+/* Depannage Layout */
+.depannage-layout {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.depannage-banner {
+  padding: 34px 28px;
+  background: linear-gradient(135deg, rgba(212, 0, 0, 0.12) 0%, rgba(18, 18, 18, 0.9) 100%);
+  border: 1px solid rgba(212, 0, 0, 0.25);
+  border-radius: var(--radius-md);
+}
+
+.banner-tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--color-gold);
+  letter-spacing: 0.08em;
+  margin-bottom: 10px;
+}
+
+.banner-title {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-bottom: 14px;
+}
+
+.banner-desc {
+  font-size: 0.92rem;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.hotline-card {
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: 16px 20px;
+  margin-bottom: 24px;
+}
+
+.hotline-label {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 6px;
+}
+
+.hotline-number {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-brand);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--color-red);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.hotline-number:hover {
+  color: #ff3333;
+}
+
+.hotline-note {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--color-gold);
+  margin-top: 4px;
+}
+
+.assistance-features-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.assistance-features-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 0.88rem;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.assistance-features-list li svg {
+  color: var(--color-red);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+@media (max-width: 900px) {
+  .rental-grid,
+  .depannage-layout {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .form-row-2 {
+    grid-template-columns: 1fr;
+  }
+}
